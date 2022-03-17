@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> pata ti </title>
+</head>
+<style type="text/css">
+	.s
+	{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		background-size: cover;
+		background-image: url(1.jpg);
+	}
+	.ss
+	{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		opacity: 0.4;
+		background-size: cover;
+		background-image: url(2.jpg);
+	}
+	.sss
+	{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		opacity: 0.4;
+		background-size: cover;
+		background-image: url(3.jpg);
+	}
+	.con
+	{
+		position: absolute;
+		width: 45%;
+		height: 14%;
+		left: 28.5%;
+		top: 10%;
+		border-radius: 50px;
+		background-color: rgb(0, 0, 0, 0.7);
+		animation-name: costa; 
+		text-align: center;
+		font-size: 80px; 
+		color: white;
+		text-shadow: 0 0 16px #6A1B9A , 0 0 8px #6A1B9A;
+        animation-duration: 7s;
+        box-shadow: 0px 0px 10px 10px #FFFFFF;
+        animation-iteration-count: infinite;
+	}
+	@keyframes costa
+	{
+      0%  {box-shadow: 0px 0px 4px 4px #FFFFFF}
+      33%  {box-shadow: 0px 0px 10px 10px #6A1B9A}
+      66%  {box-shadow: 0px 0px 4px 4px #2B77E4}
+      91%  {box-shadow: 0px 0px 10px 10px #AA51F0}
+      100%  {box-shadow: 0px 0px 4px 4px #FFFFFF}
+    }
+    .a
+{
+	position: absolute;
+	top: 50%;
+	height: 11%;
+	width: 20%;
+	background-color: rgb(0, 0, 0, 0.4);
+	left: 10%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 4px 4px #F3F0F0;
+	color: white;
+	font-size: 300%;
+	text-shadow: 0 0 8px #FFFFFF, 0 0 8px #000000; 
+	line-height: 160%;
+	text-align: center;
+	transition: 3s;
+}
+.a:hover
+{
+	color: black;
+	transition: 3s;
+	text-shadow: 0 0 8px #A349A4, 0 0 8px #9151D2;
+	box-shadow: 0px 0px 4px 4px #F3F0F0;
+}
+.a1:hover
+{
+	color: black;
+	transition: 3s;
+	text-shadow: 0 0 8px #A349A4, 0 0 8px #9151D2;
+}
+.a1
+{
+	position: absolute;
+	top: 50%;
+	height: 11%;
+	width: 20%;
+	background-color: rgb(0, 0, 0, 0.4);
+	left: 71%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 4px 4px #F3F0F0;
+	color: white;
+	font-size: 430%;
+	text-shadow: 0 0 8px #FFFFFF, 0 0 8px #000000; 
+	line-height: 106%;
+	text-align: center;
+	transition: 3s;
+}
+.sa
+{
+	position: absolute;
+	top: 35%;
+	height: 50%;
+	width: 32%;
+	background-color: rgb(0, 0, 0, 0.4);
+	left: 34.5%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 4px 4px #F3F0F0;
+	color: white;
+	font-size: 180%;
+	text-shadow: 0 0 8px #FFFFFF, 0 0 8px #000000; 
+	line-height: 120%;
+	text-align: center;
+	transition: 3s;
+}
+.se
+{
+	position: absolute;
+	top: 35%;
+	height: 50%;
+	width: 32%;
+	background-image: url(hist.gif);
+	left: 34.5%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 4px 4px #F3F0F0;
+	color: white;
+	font-size: 180%;
+	text-shadow: 0 0 8px #FFFFFF, 0 0 8px #000000; 
+	line-height: 120%;
+	text-align: center;
+	transition: 3s;
+}
+</style>
+<body>
+<div class="s"></div>
+<div class="ss"></div>
+<div class="sss"></div>
+<div class="con"> carmesí </div>
+<div class="a" onclick="intro();"> introducción </div>
+<div class="a1" onclick="can();"> canción </div>
+<div class="na" id="contus"> </div>
+<div class="sa" id="contu"> HOLA </div>
+
+<form>
+	<input type="number" id="contra" class="a" style="top: 65%; width: 19.5%;">
+	<input type="number" id="contre" class="a1" style="top: 65%; ">
+</form>
+<script type="text/javascript">
+	function intro() 
+	{
+		x = document.getElementById("contra").value; 
+        if (x==1436) 
+        {
+           document.getElementById("contu").innerHTML = "Esta página tiene como objetivo dramatizar los sentimientos del propietario hacia la persona indicada ana Victoria, teniendo como expectativa de la receptora que la misma se mantenga en privado, la expresión de los sentimientos del propietario va a ser en forma de canción, la cual no es buena, ya que no es buen compositor así que se espera una mirada laxa y crítica, muchas gracias.";
+        }
+	}
+	function can() 
+	{
+		x = document.getElementById("contre").value; 
+        if (x==7925) 
+        {
+           document.getElementById("contu").innerHTML = "envia esto a mi chat 153759";
+           var n = document.getElementById('contus');
+           n.className = "se";
+        }
+	}
+	function cum() 
+	{
+		
+	}
+</script>
+</body>
+</html>
